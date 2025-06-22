@@ -18,16 +18,20 @@
   "type": "commonjs",
   "devDependencies": {
     "electron": "^36.5.0",
-    "electron-builder": "^26.0.12"
+    "electron-builder": "^26.0.12",
+    "electron-store": "^10.1.0"
   },
   "build": {
     "appId": "com.laputa.readnow",
     "productName": "ReadNow",
     "linux": {
-      "target": ["AppImage", "deb"],
-      "icon":"assets/icon.png",
+      "target": [
+        "AppImage",
+        "deb"
+      ],
+      "icon": "assets/icon.png",
       "category": "Utility",
-       "maintainer": "Jianyong Chen <baluschch@gmail.com>"
+      "maintainer": "Jianyong Chen <baluschch@gmail.com>"
     }
   }
 }
