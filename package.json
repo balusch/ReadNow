@@ -1,20 +1,33 @@
 {
-  "name": "weread-electron",
+  "name": "ReadNow",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A beautiful, minimal reading WeRead app powered by Electron.",
+  "author": {
+    "name": "Jianyong Chen",
+    "email": "baluschch@gmail.com",
+    "url": "https://chenjianyong.com"
+  },
+  "homepage": "https://chenjianyong.com",
+  "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "electron .",
+    "build": "electron-builder"
   },
   "keywords": [],
-  "author": "",
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
-    "electron": "^36.5.0"
+    "electron": "^36.5.0",
+    "electron-builder": "^26.0.12"
   },
-  "main": "main.js",
-  "scripts": {
-    "start": "electron ."
+  "build": {
+    "appId": "com.laputa.readnow",
+    "productName": "ReadNow",
+    "linux": {
+      "target": ["AppImage", "deb"],
+      "icon":"assets/icon.png",
+      "category": "Utility",
+       "maintainer": "Jianyong Chen <baluschch@gmail.com>"
+    }
   }
 }

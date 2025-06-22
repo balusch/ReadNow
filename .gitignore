@@ -1,1 +1,37 @@
-/node_modules
+# Node dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Electron build output
+dist/
+out/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+
+# Electron builder cache
+.build/
+
+# Optional: ignore packaged app
+*.AppImage
+*.deb
+*.snap
+*.tar.gz
+*.zip
+
+# Optional: backup files
+*~
+*.bak
+
