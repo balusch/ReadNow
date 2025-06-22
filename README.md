@@ -27,6 +27,7 @@ ReadNow is a beautiful, minimal cross-platform reading app built with [Electron]
 ```bash
 # Clone repo
 git clone https://github.com/yourusername/readnow.git
+git lfs install && git lfs pull
 cd readnow
 
 # Install dependencies
