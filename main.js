@@ -58,6 +58,16 @@ function registerShortcuts() {
   globalShortcut.register('Escape', () => {
     if (win) win.minimize()
   })
+  globalShortcut.register('CommandOrControl+Left', () => {
+    if (win && win.webContents.canGoBack()) {
+      win.webContents.goBack()
+    }
+  })
+  globalShortcut.register('CommandOrControl+Right', () => {
+    if (win && win.webContents.canGoForward()) {
+      win.webContents.goForward()
+    }
+  })
 }
 
 app.whenReady().then(() => {
